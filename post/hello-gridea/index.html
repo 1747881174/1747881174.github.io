@@ -17,11 +17,19 @@ function getCSS()
         datetoday.setTime(timenow);
         thehour = datetoday.getHours();
 
+        if (thehour<06)
+
             display = "https://1747881174.github.io/media/css/night.css";
 
+       else if (thehour>10)
+
             display = "https://1747881174.github.io/media/css/night.css";   
-      
+
+        else if (thehour>06)
+           
             display = "https://1747881174.github.io/media/css/day.css";
+
+        else if (thehour<10)
 
             display = "https://1747881174.github.io/media/css/day.css";
       
@@ -62,7 +70,7 @@ window.onload=getCSS();
 			<div class="site-branding">
 									<h1 class="site-title"><a href="https://1747881174.github.io" rel="home">Super_zh</a></h1>
 										
-					<h2 class="site-description">最咸的咸鱼</h2>
+					<h2 class="site-description">最咸的那条鱼</h2>
 										
 							</div>
 			<nav id="nav-wrapper">
@@ -193,7 +201,11 @@ window.onload=getCSS();
 	<div class="wow rollIn author-info" style="visibility: visible; animation-name: rollIn;">
 	<div class="author-avatar pull-left"><img src="https://1747881174.github.io/images/avatar.png" ></div>
  
+	<div class="author-description"><div class="author-title"><div class="author-link" rel="author">阿政</div></div>
 
+
+	<p class="author-bio">人一定要有梦想，即使是一条咸鱼，也要做最咸的那一条！</p></div></div>
+	
 		</div>
 		
  
